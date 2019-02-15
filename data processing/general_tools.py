@@ -1,3 +1,14 @@
+'''
+Holds various tools called by other scripts. Tools include the following:
+-Confusion matrix : cm
+-Load data - features into X and y for model: load_data
+-Min max data scaler: scale_data. Min max used because of data distribution
+-Split train/test data input into models: clean_data
+-Generate a ROC curve: ROC
+-Generate a bar plot to visualize coefficients for LR: bar_coef
+-Filter data (high/low/bandpass):butter_[]_filter
+'''
+
 from scipy.signal import butter, filtfilt
 from rfpimp import importances, plot_importances, RandomForestClassifier
 from sklearn.preprocessing import MinMaxScaler
@@ -87,7 +98,7 @@ def cm(cm,
 
 ####################
 
-current_path = '/Users/richarddo/Documents/github/Metis/Projects/Project_3_Mcnulty/'
+current_path = '/Users/richarddo/Documents/github/Metis/Projects/burpee_not_burpee/'
 
 
 def load_data(loc='data/df_train.pk', current_path=current_path):

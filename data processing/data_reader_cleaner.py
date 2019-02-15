@@ -115,9 +115,9 @@ if __name__ == '__main__':
     df_peaks = find_peaks(df, thres=0.2, min_dist=400, thres_abs=True, plots=1)
 
 #
-df['Y_filt_hp'].iloc[:-500].plot(figsize=(10, 10))
-#
-df['Y_filt_bp'].iloc[100:2500].plot(figsize=(10, 10))
-#
-#
+# df['Y_filt_hp'].iloc[:-500].plot(figsize=(10, 10))
+# #
+# df['Y_filt_bp'].iloc[100:2500].plot(figsize=(10, 10))
+# #
+# #
 # df['Y'].iloc[600:1400].plot(figsize=(10, 10))
