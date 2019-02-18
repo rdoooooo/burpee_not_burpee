@@ -1,3 +1,8 @@
+'''
+Primary tool to look at new data coming in from Apple Watch. Script is flexible
+to tune thresholds that could be used in feature extraction
+'''
+
 from scipy.signal import hilbert
 from scipy import signal
 import scipy as sp

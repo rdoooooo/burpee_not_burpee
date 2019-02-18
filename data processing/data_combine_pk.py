@@ -1,5 +1,6 @@
 '''
 Combines all pk into a single dataframe to be inputed into a classifier
+Performs task for training and test set
 '''
 
 import pandas as pd
